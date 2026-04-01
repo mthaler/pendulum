@@ -1,2 +1,2 @@
 # pendulum
-The phase diagram of a pendulum with friction
+The phase diagram of a pendulum
