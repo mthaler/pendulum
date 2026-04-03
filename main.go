@@ -20,14 +20,5 @@ func main() {
 			Y: x0 * math.Cos(math.Sqrt(g/l)*float64(i)/100.0),
 		})
 	}
-	CreateLineplotPlot(points, "t - x", "t", "x", "eom.png")
-
-	points2 := plotter.XYs{}
-	for i := 0; i <= 500; i++ {
-		points2 = append(points, plotter.XY{
-			X: float64(i) / 100.0,
-			Y: x0 * math.Cos(math.Sqrt(g/l)*float64(i)/100.0),
-		})
-	}
-	CreateLineplotPlot(points2, "t - x", "t", "x", "eom.png")
+	CreateLineplotPlot(points, "t - x", "t", "x", 0, 5, "eom.png")
 }
