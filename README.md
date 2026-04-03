@@ -1,5 +1,5 @@
 # pendulum
-The euation of motion and the phase diagram of a pendulum
+The equation of motion and the phase diagram of a pendulum
 
 Equation of motion:
 
