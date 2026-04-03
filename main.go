@@ -20,5 +20,5 @@ func main() {
 			Y: x0 * math.Cos(math.Sqrt(g/l)*float64(i)/100.0),
 		})
 	}
-	CreateLineplotPlot(points, "eom.png")
+	CreateLineplotPlot(points, "t - x", "t", "x", "eom.png")
 }
