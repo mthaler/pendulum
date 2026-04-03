@@ -5,9 +5,10 @@ import (
 )
 
 const (
-	x0 = 0.3
-	g  = 9.81
-	l  = 4.0
+	x0     = 0.3
+	phimax = 0.5
+	g      = 9.81
+	l      = 4.0
 )
 
 func main() {
