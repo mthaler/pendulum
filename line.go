@@ -9,11 +9,11 @@ import (
 	"gonum.org/v1/plot/vg"
 )
 
-func CreateLineplotPlot(points plotter.XYs, title, labelx, labely string, bounds bounds, file string) {
+func CreateLineplotPlot(points plotter.XYs, title string, labels labels, bounds bounds, file string) {
 	p := plot.New()
 	p.Title.Text = title
-	p.X.Label.Text = labelx
-	p.Y.Label.Text = labely
+	p.X.Label.Text = labels.x
+	p.Y.Label.Text = labels.y
 	p.X.Min, p.X.Max, p.Y.Min, p.Y.Max = bounds.xmin, bounds.xmax, bounds.ymin, bounds.ymax
 
 	err := plotutil.AddLines(p, "equation of motion", points)

@@ -26,5 +26,9 @@ func main() {
 		ymin: -0.5,
 		ymax: 0.5,
 	}
-	CreateLineplotPlot(points, "t - x", "t", "x", b, "eom.png")
+	l := labels{
+		x: "t",
+		y: "x",
+	}
+	CreateLineplotPlot(points, "t - x", l, b, "eom.png")
 }
