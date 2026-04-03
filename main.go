@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"math"
+
+	"gonum.org/v1/plot/plotter"
+)
 
 const (
 	x0 = 0.3
@@ -9,5 +13,12 @@ const (
 )
 
 func main() {
-	fmt.Println("Hello, World!")
+	points := plotter.XYs{}
+	for i := 0; i <= 5; i++ {
+		points = append(points, plotter.XY{
+			X: float64(i),
+			Y: x0 * x(float64(i)) * math.Cos(math.Sqrt(g/l)*float64(i)),
+		})
+	}
+	CreateLineplotPlot(points, "eom.png")
 }
