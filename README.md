@@ -1,2 +1,6 @@
 # pendulum
-The phase diagram of a pendulum
+The euation of motion and the phase diagram of a pendulum
+
+Equation of motion:
+
+![Equation of Motion](eom.png)
