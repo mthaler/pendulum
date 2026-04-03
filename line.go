@@ -9,7 +9,7 @@ import (
 	"gonum.org/v1/plot/vg"
 )
 
-func CreateScatterPlot(xs, ys []float64, file string) {
+func CreateLineplotPlot(xs, ys []float64, file string) {
 	p := plot.New()
 	p.Title.Text = "Height - Weight Plot"
 	p.X.Label.Text = "height"
