@@ -31,4 +31,23 @@ func main() {
 		y: "x",
 	}
 	CreateLineplotPlot(points, "t - x", l, b, "eom.png")
+	points2 := plotter.XYs{}
+	for i := 0; i <= 500; i++ {
+		t := float64(i) / 100.0
+		points = append(points, plotter.XY{
+			X: phi(t),
+			Y: x(t),
+		})
+	}
+	b2 := bounds{
+		xmin: -1,
+		xmax: 1,
+		ymin: -1,
+		ymax: 1,
+	}
+	l2 := labels{
+		x: "phi",
+		y: "x",
+	}
+	CreateLineplotPlot(points2, "phi - x", l2, b2, "pd.png")
 }
