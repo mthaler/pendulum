@@ -20,5 +20,11 @@ func main() {
 			Y: x0 * math.Cos(math.Sqrt(g/l)*float64(i)/100.0),
 		})
 	}
-	CreateLineplotPlot(points, "t - x", "t", "x", 0, 5, "eom.png")
+	b := bounds{
+		xmin: 0,
+		xmax: 5,
+		ymin: -0.5,
+		ymax: 0.5,
+	}
+	CreateLineplotPlot(points, "t - x", "t", "x", b, "eom.png")
 }
