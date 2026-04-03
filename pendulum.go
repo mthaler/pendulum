@@ -8,5 +8,6 @@ func x(t float64) float64 {
 }
 
 func phi(t float64) float64 {
-	return 0.0
+	omega := math.Sqrt(g / l)
+	return phimax * math.Sin(omega*t)
 }
