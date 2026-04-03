@@ -14,10 +14,10 @@ const (
 
 func main() {
 	points := plotter.XYs{}
-	for i := 0; i <= 5; i++ {
+	for i := 0; i <= 500; i++ {
 		points = append(points, plotter.XY{
-			X: float64(i),
-			Y: x0 * x(float64(i)) * math.Cos(math.Sqrt(g/l)*float64(i)),
+			X: float64(i) / 100.0,
+			Y: x0 * math.Cos(math.Sqrt(g/l)*float64(i)/100.0),
 		})
 	}
 	CreateLineplotPlot(points, "eom.png")

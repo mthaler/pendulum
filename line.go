@@ -11,7 +11,7 @@ import (
 
 func CreateLineplotPlot(points plotter.XYs, file string) {
 	p := plot.New()
-	p.Y.Min, p.X.Min, p.Y.Max, p.X.Max = -0.5, 0.5, 5, 5
+	p.X.Min, p.X.Max, p.Y.Min, p.Y.Max = -0, 5, -0.5, 0.5
 
 	err := plotutil.AddLines(p, "line1", points)
 	if err != nil {
