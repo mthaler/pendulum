@@ -1,8 +1,6 @@
 package main
 
 import (
-	"math"
-
 	"gonum.org/v1/plot/plotter"
 )
 
@@ -15,9 +13,10 @@ const (
 func main() {
 	points := plotter.XYs{}
 	for i := 0; i <= 500; i++ {
+		t := float64(i) / 100.0
 		points = append(points, plotter.XY{
-			X: float64(i) / 100.0,
-			Y: x0 * math.Cos(math.Sqrt(g/l)*float64(i)/100.0),
+			X: t,
+			Y: x(t),
 		})
 	}
 	b := bounds{
