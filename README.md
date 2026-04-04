@@ -5,6 +5,6 @@ Equation of motion:
 
 ![Equation of Motion](eom.png)
 
-The phase diagram is pretty boring, it is just a circle:
+The phase diagram is pretty boring, it is just an ellipse:
 
 ![Phase diagram](pd.png)
