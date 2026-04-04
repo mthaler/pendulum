@@ -36,7 +36,7 @@ func main() {
 		t := float64(i) / 100.0
 		points2 = append(points2, plotter.XY{
 			X: x(t),
-			Y: xdot(t),
+			Y: v(t),
 		})
 	}
 	b2 := bounds{
@@ -47,7 +47,7 @@ func main() {
 	}
 	l2 := labels{
 		x: "x",
-		y: "xdot",
+		y: "v",
 	}
-	CreateLineplotPlot(points2, "x - xdot", l2, b2, "pd.png")
+	CreateLineplotPlot(points2, "x - v", l2, b2, "pd.png")
 }
