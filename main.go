@@ -34,7 +34,7 @@ func main() {
 	points2 := plotter.XYs{}
 	for i := 0; i <= 500; i++ {
 		t := float64(i) / 100.0
-		points = append(points, plotter.XY{
+		points2 = append(points2, plotter.XY{
 			X: x(t),
 			Y: xdot(t),
 		})
