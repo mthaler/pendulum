@@ -16,7 +16,7 @@ func CreateLineplotPlot(points plotter.XYs, title string, labels labels, bounds 
 	p.Y.Label.Text = labels.y
 	p.X.Min, p.X.Max, p.Y.Min, p.Y.Max = bounds.xmin, bounds.xmax, bounds.ymin, bounds.ymax
 
-	err := plotutil.AddLines(p, "equation of motion", points)
+	err := plotutil.AddLines(p, "", points)
 	if err != nil {
 		log.Fatalf("could not create lineplot: %+v", err)
 	}

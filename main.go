@@ -40,14 +40,14 @@ func main() {
 		})
 	}
 	b2 := bounds{
-		xmin: -1,
-		xmax: 1,
-		ymin: -1,
-		ymax: 1,
+		xmin: -0.3,
+		xmax: 0.3,
+		ymin: -0.5,
+		ymax: 0.5,
 	}
 	l2 := labels{
-		x: "phi",
-		y: "x",
+		x: "x",
+		y: "xdot",
 	}
 	CreateLineplotPlot(points2, "x - xdot", l2, b2, "pd.png")
 }
