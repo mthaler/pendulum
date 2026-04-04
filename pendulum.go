@@ -9,5 +9,5 @@ func x(t float64) float64 {
 
 func xdot(t float64) float64 {
 	omega := math.Sqrt(g / l)
-	return omega
+	return -(x0 * omega * math.Sin(omega*t))
 }
