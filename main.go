@@ -36,7 +36,7 @@ func main() {
 		t := float64(i) / 100.0
 		points2 = append(points2, plotter.XY{
 			X: x(t),
-			Y: v(t),
+			Y: vx(t),
 		})
 	}
 	b2 := bounds{
