@@ -47,7 +47,7 @@ func main() {
 	}
 	l2 := labels{
 		x: "x",
-		y: "v",
+		y: "vx",
 	}
-	CreateLineplotPlot(points2, "x - v", l2, b2, "pd.png")
+	CreateLineplotPlot(points2, "x - vx", l2, b2, "pd.png")
 }
